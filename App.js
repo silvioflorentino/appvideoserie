@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import {NavigationContainer } from '@react-navigation/native';
 
 
-import Exemplo from './components/Filmes/SteveJobs';
+import RotasTab from './components/RotasTab';
 
 export default function App() {
   return (
-    < >
-    <Exemplo />
-    </>
+    <NavigationContainer>
+    <RotasTab />
+    </NavigationContainer>
   );
 }
 

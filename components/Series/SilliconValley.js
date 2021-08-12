@@ -13,7 +13,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const Separador = () => <View style={estilo.separador} />;
 
-export default function SteveJobs() {
+export default function SilliconValley() {
   return (
     <View style={estilo.container}>
       <ScrollView>
@@ -22,15 +22,15 @@ export default function SteveJobs() {
           style={estilo.img}
           source={{
             uri:
-              'https://veja.abril.com.br/wp-content/uploads/2016/05/ashton-kutcher-como-steve-jobs-original.jpeg',
+              'https://br.web.img3.acsta.net/r_1920_1080/pictures/18/03/29/15/28/2555433.jpg',
           }}>
-          <Text style={estilo.titulo}>SteveJobs</Text>
+          <Text style={estilo.titulo}>Sillicon Valley</Text>
+          <Text style={estilo.legenda} >S05 | E20 </Text>
         </ImageBackground>
 
         <View style={estilo.container2}>
           <Text style={estilo.legenda}>
-            <MaterialCommunityIcons name="calendar-range" /> 09 de outubro de
-            2015 <MaterialCommunityIcons name="eye-outline" /> Não assistido{' '}
+            <MaterialCommunityIcons name="calendar-range" /> 2014 - 2019         <MaterialCommunityIcons name="eye-outline" /> Não assistido{' '}
             <MaterialCommunityIcons
               name="checkbox-marked-circle"
               size={40}
@@ -46,32 +46,24 @@ export default function SteveJobs() {
                 name="arrow-right-drop-circle-outline"
                 size={30}
               />{' '}
-              Microsoft Movies & TV{' '}
+              Disney+{' '}
             </Text>
           </TouchableOpacity>
 
           <Separador />
-          <Text style={estilo.info}>Informações do Filme</Text>
+          <Text style={estilo.info}>Informações da Série</Text>
 
           <Text style={estilo.estrelas}>
             <MaterialCommunityIcons name="star" size={30} color={'#FFD700'} />
             <MaterialCommunityIcons name="star" size={30} color={'#FFD700'} />
             <MaterialCommunityIcons name="star" size={30} color={'#FFD700'} />
-            <MaterialCommunityIcons name="star" size={30} color={'#FFD700'} />
+            <MaterialCommunityIcons name="star" size={30} color={'#FFFFFF'} />
             <MaterialCommunityIcons name="star" size={30} color={'#FFFFFF'} />
           </Text>
 
           <Text style={estilo.texto}>
-            Steve Jobs (estilizado como steve jobs) é um filme estado-unidense
-            do género drama biográfico, baseado na vida de Steve Jobs, o
-            cofundador da Apple, que protagonizou Michael Fassbender em seu
-            papel. O filme foi realizado por Danny Boyle, produzido por Scott
-            Rudin, e escrito por Aaron Sorkin, cujo argumento foi adaptado da
-            biografia homónima escrita por Walter Isaacson. O filme foi lançado
-            nos Estados Unidos em 9 de outubro de 2015, quatro anos após a morte
-            de Steve Jobs. Em Portugal foi lançado a 12 de novembro de 2015, e
-            no Brasil em 21 de janeiro de 2016. O trailer oficial foi lançado em
-            1 de julho de 2015.
+         Richard (Thomas Middleditch), Big Head (Josh Brener), Gilfoyle (Martin Starr) e Dinesh (Kumail Nanjiani) são programadores tão inteligentes quanto introvertidos. Eles trabalham na companhia Hooli, no Vale do Silício, e vivem sob a "custódia" de Erlich, um milionário que os deixa morarem em sua casa de graça - desde que ele ganhe 10% dos lucros dos projetos dos garotos.
+Após a falha de um investimento do capitalista Peter Gregory (Christopher Evan Welch), Richard parece destinado a permanecer em seu trabalho medíocre na companhia, fundada pelo megalomaníaco Gavin Belson (Matt Ross). Quando Mônica (Amanda Crew), chefe de operações de Gregory, e Jared (Zach Woods), executivo, percebem o valor do algorítmo criado por Richard, uma disputa de ofertas surge entre Belson e Gregory, e Richard fica no meio.
           </Text>
 
           <Separador />
@@ -81,7 +73,7 @@ export default function SteveJobs() {
               style={estilo.imgPequena}
               source={{
                 uri:
-                  'https://br.web.img3.acsta.net/c_162_216/medias/nmedia/18/92/22/33/20187349.jpg',
+                  'https://br.web.img3.acsta.net/c_310_420/pictures/19/01/14/21/19/3769649.jpg',
               }}
             />
 
@@ -89,21 +81,21 @@ export default function SteveJobs() {
               style={estilo.imgPequena}
               source={{
                 uri:
-                  'https://br.web.img3.acsta.net/c_162_216/pictures/18/07/18/21/18/1204522.jpg',
+                  'https://br.web.img2.acsta.net/c_310_420/pictures/18/03/23/14/22/3392188.jpg',
               }}
             />
             <Image
               style={estilo.imgPequena}
               source={{
                 uri:
-                  'https://br.web.img3.acsta.net/c_162_216/pictures/18/07/27/23/05/4805454.jpg',
+                  'https://br.web.img3.acsta.net/c_310_420/pictures/19/04/05/20/21/1354243.jpg',
               }}
             />
           </View>
           <View style={estilo.atoresTodos}>
-            <Text style={estilo.atores}>Michael F.</Text>
-            <Text style={estilo.atores}>Kate Winslet</Text>
-            <Text style={estilo.atores}>Seth Rogen</Text>
+            <Text style={estilo.atores}>Thomas S. M.</Text>
+            <Text style={estilo.atores}>Todd J. M.</Text>
+            <Text style={estilo.atores}>Joshua M. B.</Text>
           </View>
         </View>
       </ScrollView>

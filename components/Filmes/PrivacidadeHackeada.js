@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Dimensions, ScrollView } from 'react-native';
+import {MaterialCommunityIcons} from '@expo/vector-icons';
 
 const Separador = () => <View style={estilo.separador}/>;
 
@@ -12,8 +13,7 @@ export default function PrivacidadeHackeada() {
     <Image style={estilo.img} source={{uri:'http://nucleopiratininga.org.br/wp-content/uploads/2019/08/privacidade-hackeada.png'}} />
 
     <View style={estilo.container2}>
-    <Text style={estilo.legenda}>26 de janeiro de 2019
-    Não assistido
+    <Text style={estilo.legenda}><MaterialCommunityIcons name="calendar-range"/> 26 de janeiro de 2019        <MaterialCommunityIcons name="eye-outline"/> Não assistido    <MaterialCommunityIcons name="check-circle-outline" size={20}/>
     </Text>
 
     <Separador/>
@@ -21,12 +21,21 @@ export default function PrivacidadeHackeada() {
     <Text style={estilo.info}>Onde Assistir</Text>
 
     <TouchableOpacity style={estilo.botao}>
-    <Text style={estilo.textobotao}> Microsoft Movies & TV</Text>
+    <Text style={estilo.textobotao}><MaterialCommunityIcons name="adjust"/> Microsoft Movies & TV</Text>
     </TouchableOpacity>
 
     <Separador/>
 
-      <Text style={estilo.info}>informações do filme</Text>
+      <Text style={estilo.info}><MaterialCommunityIcons name="alert-circle-outline"/> Informações do filme</Text>
+
+<Text style={estilo.estrela}>
+      <MaterialCommunityIcons name="star" size={30} color={'gold'}/>
+      <MaterialCommunityIcons name="star" size={30} color={'gold'}/>
+      <MaterialCommunityIcons name="star" size={30} color={'gold'}/>
+      <MaterialCommunityIcons name="star" size={30} color={'gold'}/>
+      <MaterialCommunityIcons name="star" size={30} color={'white'}/>
+</Text>
+
 
       <Text style={estilo.texto}>
         O escândalo da empresa de consultoria Cambridge Analytica e do Facebook
@@ -46,6 +55,7 @@ export default function PrivacidadeHackeada() {
       <Image style={estilo.imgPequena} source={{uri:'https://www.criptofacil.com/wp-content/uploads/2020/01/brittany-kaiser-destaca-blockchain-como-ferramenta-privacidade-dados.jpg'}} />
       <Image style={estilo.imgPequena} source={{uri:'https://2018.cybersecforum.eu/media/PRELEGENCI_carroll.png'}} />
       </View>
+
       <View style={estilo.nomeElenco}>
       <Text style={estilo.corElenco}>Mark Zuckerberg</Text>
       <Text style={estilo.corElenco}>Britanny Kaiser</Text>
@@ -69,13 +79,15 @@ const estilo = StyleSheet.create({
   },
   imgElenco: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   nomeElenco: {
+    marginHorizontal: -10,
     flexDirection: 'row',
   },
   corElenco:{
     color:'white',
-    margin: 15,
+    margin: 10,
   },
   img: {
     width: largura,
@@ -100,8 +112,12 @@ const estilo = StyleSheet.create({
   textobotao:{
     color: '#ffffff',
   },
+  estrela: {
+    marginVertical: 10,
+  },
   info: {
     color: '#ffffff',
+    marginBottom: 10,
   },
   texto: {
     color: '#ffffff',
